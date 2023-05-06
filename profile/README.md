@@ -1,4 +1,4 @@
-## Usage/Examples
+## 👋 Usage/Examples
 
 ```javascript
 import { Host, Client } from 'uNet'

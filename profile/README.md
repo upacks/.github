@@ -1,18 +1,18 @@
 ## 👋 Usage/Examples
 
 ```javascript
-import { Host, Client } from 'uNet'
-import { Safe, Delay, Loop, Log } from 'uTil'
+import { Host, Client } from 'unet'
+import { Safe, Delay, Loop, Log } from 'utils'
 
 Safe(() => {
 
-	const uHost = new Host(1020)
-	uHost.on('message', Log)
-	Loop(() => uHost.emit('Hello from the Server'), 1000 / 60 /**60fps**/)
+	const myHost = new Host(1020)
+	myHost.on('message', Log)
+	Loop(() => myHost.emit('Hello from the Server'), 1000 / 60 /**60fps**/)
 
-	const uclient = new Client(1020)
-	uClient.on('message', Log)
-	Loop(() => uClient.emit('Hello from the Client'), 1000 / 60 /**60fps**/)
+	const myClient = new Client(1020)
+	myClient.on('message', Log)
+	Loop(() => myClient.emit('Hello from the Client'), 1000 / 60 /**60fps**/)
 
 })
 ```
